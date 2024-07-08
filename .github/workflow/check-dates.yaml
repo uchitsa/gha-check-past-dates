@@ -1,3 +1,5 @@
 name: check dates in README
 on:
-  push
+  push:
+    branches:
+      - main
