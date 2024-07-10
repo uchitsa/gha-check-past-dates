@@ -22,3 +22,6 @@ def date_in_past(date):
 
 new_readme_content = date_pattern.sub(lambda match: "closed" if date_in_past(match.group(0)) else match.group(0),
                                       readme_content)
+
+if new_readme_content != readme_content:
+    repo.update_file(readme.path, "update past dates to closed", new_readme_content, readme.sha)
