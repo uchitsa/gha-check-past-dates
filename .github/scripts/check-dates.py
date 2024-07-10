@@ -18,3 +18,7 @@ date_pattern = re.compile(
 
 def date_in_past(date):
     return datetime.strptime(date, "%Y-%m-%d") < datetime.now()
+
+
+new_readme_content = date_pattern.sub(lambda match: "closed" if date_in_past(match.group(0)) else match.group(0),
+                                      readme_content)
