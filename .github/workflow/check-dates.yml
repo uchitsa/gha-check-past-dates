@@ -1,5 +1,5 @@
 ---
-name: check dates in README
+name: check-dates
 on: [ "push", "pull_request" ]
 jobs:
   build:
