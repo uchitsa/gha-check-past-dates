@@ -40,5 +40,4 @@ GitHub Action script to check past dates
 | [ICFEM'24](<https://icfem2024.info>) | Springer | C | <https://portal.core.edu.au/conf-ranks/1031> | SE | 12 | 18 | LNCS | 2024-06-24 | JP |
 | [SCAM'24](<https://conf.researchr.org/home/scam-2024>) | IEEE | C | <https://portal.core.edu.au/conf-ranks/718> | SE |   | 12 |   | 2024-06-21 | US |
 | [QRS'24](<https://qrs24.techconf.org>) | IEEE | C | <https://portal.core.edu.au/conf-ranks/1185> | SE | 10 | 12 | 2C | 2024-04-15 | UK |
-
 <!-- events -->
