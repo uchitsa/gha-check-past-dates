@@ -8,7 +8,7 @@ if token is None:
     raise ValueError('TOKEN env is not set')
 
 gh = Github(token)
-repo = gh.get_repo(os.environ.get('GITHUB_REPOSITORY'))
+repo = gh.get_repo(os.environ.get('REPOSITORY'))
 readme = repo.get_readme()
 readme_content = readme.decoded_content.decode('utf-8')
 
