@@ -4,9 +4,6 @@ import re
 from datetime import datetime
 
 token = os.environ.get('TOKEN')
-if token is None:
-    raise ValueError('TOKEN env is not set')
-
 gh = Github(token)
 repo = gh.get_repo(os.environ.get('REPOSITORY'))
 readme = repo.get_readme()
