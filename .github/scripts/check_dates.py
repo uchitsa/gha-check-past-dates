@@ -3,9 +3,9 @@ from github import Github
 import re
 from datetime import datetime
 
-token = os.environ.get('TOKEN')
+token = os.environ['TOKEN']
 gh = Github(token)
-repo = gh.get_repo(os.environ.get('REPOSITORY'))
+repo = gh.get_repo(os.environ['REPOSITORY'])
 readme = repo.get_readme()
 readme_content = readme.decoded_content.decode('utf-8')
 
