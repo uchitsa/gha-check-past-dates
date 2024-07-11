@@ -4,11 +4,8 @@ import re
 from datetime import datetime
 
 token = os.environ.get('TOKEN')
-print(token)
 gh = Github(token)
-repo_addr = os.environ.get("https://api.github.com/repos/uchitsa/gha-check-past-dates")
-print(repo_addr)
-repo = gh.get_repo(repo_addr)
+repo = gh.get_repo("https://api.github.com/repos/uchitsa/gha-check-past-dates")
 readme = repo.get_readme()
 readme_content = readme.decoded_content.decode('utf-8')
 
