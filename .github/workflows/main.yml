@@ -14,8 +14,6 @@ jobs:
           pip install PyGithub
       - run: |
           python .github/scripts/check_dates.py
-        env:
-          GITHUB_TOKEN: ${{ SECRETS.GITHUB_TOKEN }}
       - uses: peter-evans/create-pull-request@v6
         with:
           branch: update-past-dates
