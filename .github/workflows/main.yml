@@ -10,8 +10,7 @@ jobs:
         with:
           python-version: '3.x'
       - run: pip install -r requirements.txt
-      - run: |
-          python .github/scripts/check_dates.py
+      - run: python .github/scripts/check_dates.py
       - uses: peter-evans/create-pull-request@v6
         with:
           branch: update-past-dates
